@@ -1,0 +1,27 @@
+IFSULDEMINAS;
+COMPILADORES;
+
+INICIO{}
+
+
+temperaturaatual := 25.0; ¨temperatura atual do ambiente
+temperaturadesejada := 20.0; ¨temperatura desejada do ambiente
+deltatemperatura := temperaturadesejada - temperaturatual; ¨diferença entre temperatura atual e desejada
+ENQUANTO (VERDADEIRO)[
+    SE (deltatemperatura > 0)[
+        ESCREVA("Ligando o aquecedor...");
+	]
+    SE (deltatemperatura < 0)[
+        ESCREVA("Desligando o aquecedor...");
+        temperaturaatual := temperaturaatual - 1 ;
+        ¨diminui 1 grau na temperatura atual
+       ]
+    SENAO[
+        ESCREVA("Temperatura ideal alcançada!");
+        INTERROMPA;
+    ESCREVA(temperaturaatual);
+    deltatemperatura := temperaturadesejada - temperaturaatual;
+]
+
+]
+FIM{}
