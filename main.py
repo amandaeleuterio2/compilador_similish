@@ -535,13 +535,14 @@ class Application():
             newWindow.insert("", 22, text = "", values = ("FECHA_P", ")", ")", "Operador de 'fecha parênteses'"))
             newWindow.insert("", 23, text = "", values = ("COMENT", "¨", "¨", "Operador de 'comentário em linha'"))
             newWindow.insert("", 24, text = "", values = ("VIRGULA", ",", ",", "Operador de execução 'vírgula'"))
-            newWindow.insert("", 25, text = "", values = ("PONTO_E_VIRGULA", ";", ";", "Operador de execução 'ponto e vírgula'"))
-            newWindow.insert("", 26, text = "", values = ("DELIMITADOR", "$", "$", "Operador de 'delimitador (fim delinha)'"))
+            newWindow.insert("", 25, text = "", values = ("OP_LOGICO", "E, OU,", "E|OU", "Operador lógico (“e”, “ou”)"))
+            newWindow.insert("", 26, text = "", values = ("DELIMITADOR", ";", ";", "Operador de 'delimitador (fim delinha)'"))
             newWindow.insert("", 27, text = "", values = ("VAR", "temperatura, mensagem, mensagem2,", "[a-z][a-z_0-9]*", "Variável"))
             newWindow.insert("", 28, text = "", values = ("VALOR_NUMINT", "0, 1, 2, 3", "4, 5, 6", "Digito numérico 'INTEIRO'"))
             newWindow.insert("", 29, text = "", values = ("VALOR_TEXTO", "'Ciência da Computação'", "REGEX NÃO PERMITIDO", "Texto"))
             newWindow.insert("", 30, text = "", values = ("VALOR_NUMDEC", "0.1, 0.01, 0.001", "3.14, 3.141", "Digito numérico 'DECIMAL'"))
-            newWindow.insert("", 31, text = "", values = ("ASPAS", ",", ",", "Operador de execução 'aspas'"))
+            newWindow.insert("", 31, text = "", values = ("ASPAS", "", "", "Operador de execução 'aspas'"))
+    
          
 
             label.pack(pady = 10)
